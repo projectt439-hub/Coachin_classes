@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Online Coaching Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="1000132112.jpg" alt="Online Coaching Logo" width="100" height="100">
+            <span class="logo-text">Coaching Bears</span>
+        </div>
+        <h1>Professional Online Coaching Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button id="loginBtn">Login</button>
+                <button id="registerBtn">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Master Technology with Expert Coaching</h2>
+            <p>Join thousands of students learning cutting-edge technologies. Live classes, 24/7 doubt solving, and comprehensive study materials.</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <h3>Live Classes</h3>
+                    <p>Interactive online sessions with industry experts</p>
+                </div>
+                <div class="feature">
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock doubt clearing and mentorship</p>
+                </div>
+                <div class="feature">
+                    <h3>Mock Tests</h3>
+                    <p>Regular assessments to track your progress</p>
+                </div>
+            </div>
+            <button id="enrollBtn" class="cta-btn">Start Learning Today</button>
+        </div>
+        <div class="hero-image">
+            <img src="1000132112.jpg" alt="Learning illustration" style="max-width: 100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Our Technology Courses</h2>
+        <div class="course-grid">
+            <div class="course-card" data-course="sql">
+                <h3>SQL Database</h3>
+                <p>Master SQL queries, database design, and data manipulation.</p>
+                <button class="view-course">Learn More</button>
+            </div>
+            <div class="course-card" data-course="postgres">
+                <h3>PostgreSQL</h3>
+                <p>Advanced database management with PostgreSQL.</p>
+                <button class="view-course">Learn More</button>
+            </div>
+            <div class="course-card" data-course="ai">
+                <h3>Artificial Intelligence</h3>
+                <p>Explore AI concepts, machine learning algorithms, and applications.</p>
+                <button class="view-course">Learn More</button>
+            </div>
+            <div class="course-card" data-course="ml">
+                <h3>Machine Learning</h3>
+                <p>Hands-on ML with Python, data science, and model deployment.</p>
+                <button class="view-course">Learn More</button>
+            </div>
+            <div class="course-card" data-course="java">
+                <h3>Java Programming</h3>
+                <p>Complete Java course from basics to advanced concepts.</p>
+                <button class="view-course">Learn More</button>
+            </div>
+            <div class="course-card" data-course="python">
+                <h3>Python Programming</h3>
+                <p>Python for beginners to experts, with real-world projects.</p>
+                <button class="view-course">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="success-stories">
+        <h2>Meet Our Success Stories</h2>
+        <div class="stories-grid">
+            <div class="story-card">
+                <div class="story-rank">Top Performer</div>
+                <img src="1000132112.jpg" alt="Student" class="story-img">
+                <h4>Alex Johnson</h4>
+                <p>Completed AI & ML course, now working at Google</p>
+                <div class="story-course">AI & Machine Learning</div>
+            </div>
+            <div class="story-card">
+                <div class="story-rank">Best Project</div>
+                <img src="1000132112.jpg" alt="Student" class="story-img">
+                <h4>Sarah Chen</h4>
+                <p>Built 5 apps using Java, secured job at Microsoft</p>
+                <div class="story-course">Java Programming</div>
+            </div>
+            <div class="story-card">
+                <div class="story-rank">Database Expert</div>
+                <img src="1000132112.jpg" alt="Student" class="story-img">
+                <h4>Mike Davis</h4>
+                <p>PostgreSQL specialist, leading database team at Amazon</p>
+                <div class="story-course">PostgreSQL & SQL</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-list">
+            <div class="testimonial">
+                <p>"This platform transformed my learning experience. Highly recommended!"</p>
+                <cite>- John Doe, Student</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Professional instructors and interactive content. Great value for money."</p>
+                <cite>- Jane Smith, Parent</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The courses are well-structured and engaging. My grades improved significantly."</p>
+                <cite>- Alex Johnson, Student</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="course-details" style="display: none;">
+        <h2 id="course-title"></h2>
+        <div id="course-content">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+        <button id="back-btn">Back to Courses</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing quality online education to students worldwide.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="regName">Name:</label>
+                <input type="text" id="regName" required>
+                <label for="regEmail">Email:</label>
+                <input type="email" id="regEmail" required>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" required>
+                <label for="regConfirmPassword">Confirm Password:</label>
+                <input type="password" id="regConfirmPassword" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- User Dashboard (hidden by default) -->
+    <section id="dashboard" style="display: none;">
+        <h2>Welcome, <span id="userName"></span>!</h2>
+        <p>You are now logged in. Access your courses and track your progress.</p>
+        <button id="logoutBtn">Logout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Professional Online Coaching Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
